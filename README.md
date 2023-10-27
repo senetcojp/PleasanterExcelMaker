@@ -17,7 +17,8 @@ JSライブラリを読み込む都合上 Ver.1.3.45.0 以上をお勧めしま�
 埋め込むExcel表を準備します。
 参照ファイル：wbs_excel01.xlsx
 参照ファイル：wbs_excel02.xlsx
-２．Excel登録用の記録テーブルを作成
+
+### ２．Excel登録用の記録テーブルを作成
 １で作成したexcelをPleasanterに登録します。
 新しい記録テーブルを作成し、添付ファイル項目を追加してください。  
 新しいアイテムを作成し、添付ファイルにexcel表を添付して登録します。添付はひとつの添付ファイル項目に複数登録してもかまいません。
@@ -25,7 +26,7 @@ JSライブラリを読み込む都合上 Ver.1.3.45.0 以上をお勧めしま�
 ![](images/ScreenShot_2023-10-27_154405.png)
 ![](images/ScreenShot_2023-10-27_154418.png)
 
-### ２．JSライブラリの読み込み
+### ３．JSライブラリの読み込み
 PleasanterExcelMaker.js(https://github.com/senetcojp/PleasanterExcelMaker)及び関連ライブラリをロードする設定をします。
 使用するライブラリは
 ExcelJS(https://github.com/exceljs/exceljs)
@@ -35,7 +36,7 @@ FileSaverJS(https://github.com/eligrey/FileSaver.js)
 ![](images/ScreenShot_2023-10-27_155502.png)
 ![](images/ScreenShot_2023-10-27_155511.png)
 
-### ３．コマンドボタンの作成
+### ４．コマンドボタンの作成
 Excel出力用のコマンドボタンを作成します。サンプルでは一覧出力用ボタン（下部）と詳細出力用ボタン（行）に作成しています。
 参照ファイル：スクリプト_Excel出力ボタン(下部).txt
 ![](images/ScreenShot_2023-10-27_155541.png)
@@ -44,7 +45,7 @@ Excel出力用のコマンドボタンを作成します。サンプルでは一
 ![](images/ScreenShot_2023-10-27_155605.png)
 ![](images/ScreenShot_2023-10-27_155616.png)
 
-### ４．出力コードの作成  
+### ５．出力コードの作成  
 参照ファイル：HTML_Excel出力処理.txt
 ![](images/ScreenShot_2023-10-27_155502.png)
 ![](images/ScreenShot_2023-10-27_155522.png)
