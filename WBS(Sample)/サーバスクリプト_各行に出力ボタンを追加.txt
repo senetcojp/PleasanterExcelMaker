@@ -1,3 +1,0 @@
-条件は行表示の前にしてください。
-
-columns.DescriptionA.RawText = `<button id="Excel02" class="button button-icon ui-button ui-corner-all ui-widget applied" type="button" onclick="excel02(${model.IssueId});" data-icon="ui-icon-calculator"><span class="ui-button-icon ui-icon ui-icon-calculator"></span><span class="ui-button-icon-space"> </span>Excel詳細出力</button>`;

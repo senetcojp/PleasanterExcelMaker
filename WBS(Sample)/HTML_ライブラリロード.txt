@@ -1,6 +1,0 @@
-以下のコードをBody script bottomで登録してください。
-出力先は全てまたは一覧にしてください。
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/senetcojp/PleasanterExcelMaker/PleasanterExcelMaker.js"></script>

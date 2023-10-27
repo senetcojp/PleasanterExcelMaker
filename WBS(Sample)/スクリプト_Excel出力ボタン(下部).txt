@@ -1,5 +1,0 @@
-出力先は一覧にしてください。
-
-$p.events.on_grid_load = function () {
-  $('#GoBack').after('<button id="Excel01" class="button button-icon ui-button ui-corner-all ui-widget applied" type="button" onclick="excel01();" data-icon="ui-icon-calculator"><span class="ui-button-icon ui-icon ui-icon-calculator"></span><span class="ui-button-icon-space"> </span>Excel一覧出力</button>');
-};
