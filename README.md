@@ -1,52 +1,58 @@
 # PleasanterExcelMaker
 
-PleasanterExcelMakerはPleasanterでExcel表を作成するJSライブラリです。  
+PleasanterExcelMakerはPleasanterでExcel表を作成するJSライブラリです。    
 Excel表は新たに作成するだけではなく、既に作成したExcel表にデータを埋め込む事が可能です。  
-各種JSライブラリでPleasanterへのデータアクセスを容易にして、Excel表を作成するビジネスロジックに集中する為に作成しました。
+各種JSライブラリでPleasanterへのデータアクセスを容易にして、Excel表を作成するビジネスロジックに集中する為に作成しました。  
 
 ## Pleasanterのバージョン
-JSライブラリを読み込む都合上 Ver.1.3.45.0 以上をお勧めします。  
-クラウドバージョンについてはAPIを使用する都合上、デモライセンス及びスタンダード以上が必要です。  
-オープンソース及びエンタープライズに関しては制限無く使用可能です。  
+JSライブラリを読み込む都合上 Ver.1.3.45.0 以上をお勧めします。    
+クラウドバージョンについてはAPIを使用する都合上、デモライセンス及びスタンダード以上が必要です。    
+オープンソース及びエンタープライズに関しては制限無く使用可能です。    
   
 ## 使い方
 ※WBS(Sample)を添付しています。Pleasanter使用時に作成されるデモ用テーブル（またはPleasanter Cloudのデモ環境）のプロジェクト管理の例／WBSをExcelで出力するサンプルを作成しています。
 ![](images/ScreenShot_2023-10-27_182527.png)
+Youtube動画  
+https://youtu.be/N6RDkWBWnWs
 
 ### １．Excel表の準備
-埋め込むExcel表を準備します。
-参照ファイル：wbs_excel01.xlsx
-参照ファイル：wbs_excel02.xlsx
+埋め込むExcel表を準備します。  
+参照ファイル：wbs_excel01.xlsx  
+参照ファイル：wbs_excel02.xlsx  
 
 ### ２．Excel登録用の記録テーブルを作成
-１で作成したexcelをPleasanterに登録します。
-新しい記録テーブルを作成し、添付ファイル項目を追加してください。  
-新しいアイテムを作成し、添付ファイルにexcel表を添付して登録します。添付はひとつの添付ファイル項目に複数登録してもかまいません。
-![](images/ScreenShot_2023-10-27_154350.png)
-![](images/ScreenShot_2023-10-27_154405.png)
+１で作成したexcelをPleasanterに登録します。  
+新しい記録テーブルを作成し、添付ファイル項目を追加してください。    
+新しいアイテムを作成し、添付ファイルにexcel表を添付して登録します。添付はひとつの添付ファイル項目に複数登録してもかまいません。  
+![](images/ScreenShot_2023-10-27_154350.png)  
+![](images/ScreenShot_2023-10-27_154405.png)  
 ![](images/ScreenShot_2023-10-27_154418.png)
 
 ### ３．JSライブラリの読み込み
-PleasanterExcelMaker.js(https://github.com/senetcojp/PleasanterExcelMaker)及び関連ライブラリをロードする設定をします。
-使用するライブラリは
-ExcelJS(https://github.com/exceljs/exceljs)
-FileSaverJS(https://github.com/eligrey/FileSaver.js)
-になります。
-参照ファイル：HTML_ライブラリロード.txt
+PleasanterExcelMaker.js(https://github.com/senetcojp/PleasanterExcelMaker)及び関連ライブラリをロードする設定をします。  
+使用するライブラリは  
+ExcelJS(https://github.com/exceljs/exceljs)  
+FileSaverJS(https://github.com/eligrey/FileSaver.js)  
+になります。  
+参照ファイル：HTML_ライブラリロード.txt  
+https://github.com/senetcojp/PleasanterExcelMaker/blob/main/WBS(Sample)/HTML_%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89.txt  
 ![](images/ScreenShot_2023-10-27_155502.png)
 ![](images/ScreenShot_2023-10-27_155511.png)
 
 ### ４．コマンドボタンの作成
-Excel出力用のコマンドボタンを作成します。サンプルでは一覧出力用ボタン（下部）と詳細出力用ボタン（行）に作成しています。
-参照ファイル：スクリプト_Excel出力ボタン(下部).txt
+Excel出力用のコマンドボタンを作成します。サンプルでは一覧出力用ボタン（下部）と詳細出力用ボタン（行）に作成しています。  
+参照ファイル：スクリプト_Excel出力ボタン(下部).txt  
+https://github.com/senetcojp/PleasanterExcelMaker/blob/main/WBS(Sample)/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88_Excel%E5%87%BA%E5%8A%9B%E3%83%9C%E3%82%BF%E3%83%B3(%E4%B8%8B%E9%83%A8).txt  
 ![](images/ScreenShot_2023-10-27_155541.png)
 ![](images/ScreenShot_2023-10-27_155549.png)
-参照ファイル：サーバスクリプト_各行に出力ボタンを追加.txt
+参照ファイル：サーバスクリプト_各行に出力ボタンを追加.txt  
+https://github.com/senetcojp/PleasanterExcelMaker/blob/main/WBS(Sample)/%E3%82%B5%E3%83%BC%E3%83%90%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88_%E5%90%84%E8%A1%8C%E3%81%AB%E5%87%BA%E5%8A%9B%E3%83%9C%E3%82%BF%E3%83%B3%E3%82%92%E8%BF%BD%E5%8A%A0.txt  
 ![](images/ScreenShot_2023-10-27_155605.png)
 ![](images/ScreenShot_2023-10-27_155616.png)
 
 ### ５．出力コードの作成  
 参照ファイル：HTML_Excel出力処理.txt
+https://github.com/senetcojp/PleasanterExcelMaker/blob/main/WBS(Sample)/HTML_Excel%E5%87%BA%E5%8A%9B%E5%87%A6%E7%90%86.txt  
 ![](images/ScreenShot_2023-10-27_155502.png)
 ![](images/ScreenShot_2023-10-27_155522.png)
 
@@ -118,14 +124,14 @@ SaveAs(workbook, filename) | Excel表をダウンロードします。
 getFilter() | Pleasanterの一覧画面で指定した条件を取得する事ができます。
 
 ## 最後に
-コードの書き方はまだまだ満足するものでは無いので、温かい目で見て頂けたら幸いです。  
-改善が必要な点についてはIssuesよりご連絡ください。
+コードの書き方はまだまだ満足するものでは無いので、温かい目で見て頂けたら幸いです。    
+改善が必要な点についてはIssuesよりご連絡ください。  
 
 ## コマーシャル
-株式会社システムエンジニアリングではITに関連する受託開発、ソフトウェア・ハードウェア販売、保守サポート、各種サービスを提供しています。  
-Pleasanterの正規パートナーであり、サポート、開発、教育などを請け負っています。  
-ご用命の場合はホームページからご連絡ください。  
-https://senet.co.jp
+株式会社システムエンジニアリングではITに関連する受託開発、ソフトウェア・ハードウェア販売、保守サポート、各種サービスを提供しています。    
+Pleasanterの正規パートナーであり、サポート、開発、教育などを請け負っています。    
+ご用命の場合はホームページからご連絡ください。    
+https://senet.co.jp  
 
-当社ではPleasanterのフリーザポートも行っています。ご活用ください。  
-https://iwate-cloud.com/support-site/
+当社ではPleasanterのフリーザポートも行っています。ご活用ください。    
+https://iwate-cloud.com/support-site/  
